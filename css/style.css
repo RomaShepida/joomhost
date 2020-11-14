@@ -1,11 +1,120 @@
-* {
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700;900&display=swap");
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.2;
 }
 
 .container {
   max-width: 1170px;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+.header {
+  background-color: #287be8;
+  padding-top: 1px;
+}
+.header-top {
+  background-color: #fff;
+}
+.header-top__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 0;
+}
+.header-nav__list {
+  display: flex;
+  justify-content: space-between;
+}
+.header-nav__item {
+  margin-left: 40px;
+}
+.header-nav__link {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #2f3f54;
+  font-size: 14px;
+  padding: 5px 0 3px;
+  transition: all 0.5s;
+  border-bottom: 2px solid transparent;
+}
+.header-nav__link:hover {
+  color: #62aaff;
+  border-bottom: 2px solid #62aaff;
+}
+.header-body {
+  padding: 150px 0 180px;
+}
+.header-body__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.header-description {
+  color: #fff;
+}
+.header-description__title {
+  margin-bottom: 15px;
+}
+.header-description__title p {
+  margin: 10px 0;
+}
+.header-description__title h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 52px;
+  text-transform: uppercase;
+}
+.header-description__subtitle {
+  margin-bottom: 30px;
+}
+.header-description__subtitle h2 {
+  font-weight: 700;
+  font-size: 19px;
+  margin-bottom: 8px;
+}
+.header-description__list {
+  margin-bottom: 50px;
+}
+.header-description__item {
+  margin-bottom: 6px;
+}
+.header-description__button {
+  margin-bottom: 15px;
+}
+.header-description__button a {
+  text-transform: uppercase;
+  border: 3px solid #fff;
+  display: inline-block;
+  padding: 15px 50px;
+  border-radius: 26px;
+  transition: all 0.5s;
+}
+.header-description__button a:hover {
+  background: #fff;
+  color: #287be8;
 }
