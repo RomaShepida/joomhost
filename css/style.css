@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
 *,
 *::before,
 *::after {
@@ -166,4 +166,155 @@ body {
 .header-picture__text h3 {
   font-size: 54px;
   font-weight: 700;
+}
+
+.description {
+  padding-top: 150px;
+  padding-bottom: 175px;
+}
+.description-text {
+  margin-bottom: 120px;
+  text-align: center;
+}
+.description-text span.blue {
+  color: #2575e7;
+}
+.description-text span.red {
+  color: #e74c3c;
+}
+.description-text span.green {
+  color: #42d6c1;
+}
+.description-text__title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  color: #2f3f54;
+  margin-bottom: 50px;
+}
+.description-text__descr {
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 24px;
+  color: #4a6385;
+}
+.description-cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 -10px;
+}
+.description-card {
+  flex: 0 1 360px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  box-shadow: 0px 3px 35px rgba(0, 0, 0, 0.1);
+}
+.description-card__price {
+  display: flex;
+  align-items: flex-end;
+  margin: 0 auto 44px;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+  font-weight: 700;
+}
+.description-card__price span.banknote {
+  font-size: 23px;
+  line-height: 21px;
+}
+.description-card__price span.number {
+  font-size: 33px;
+  line-height: 28px;
+}
+.description-card__price span.period {
+  font-size: 16px;
+  line-height: 18px;
+}
+.description-card__price-wrapper {
+  width: 320px;
+  height: 440px;
+  border-radius: 160px/220px;
+  background-color: #267ae9;
+  margin-top: -345px;
+  margin-bottom: 20px;
+  display: flex;
+  align-self: center;
+}
+.description-card__picture {
+  text-align: center;
+  height: 125px;
+  display: inline-block;
+  position: relative;
+  margin-bottom: 45px;
+}
+.description-card__picture img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.description-card__title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  color: #267ae9;
+  padding: 0px 50px;
+  margin-bottom: 27px;
+}
+.description-card__descr {
+  color: #4a6385;
+  line-height: 24px;
+  padding: 0px 50px;
+  margin-bottom: 57px;
+}
+.description-card__features {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #4a6385;
+  padding: 0px 50px;
+  margin-bottom: 55px;
+}
+.description-card__feature {
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 20px;
+}
+.description-card__feature::before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 11px;
+  top: 4px;
+  left: 0;
+  background: url(../images/description/icon-check.png);
+}
+.description-card__button {
+  text-align: center;
+  margin-top: auto;
+}
+.description-card__button a {
+  display: inline-block;
+  background-color: #267ae9;
+  border: 2px solid transparent;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  text-transform: capitalize;
+  color: #fff;
+  letter-spacing: 1px;
+  width: 100%;
+  padding: 18px 0px;
+  transition: all 0.5s;
+}
+.description-card__button a:hover {
+  background-color: rgba(38, 122, 233, 0.1);
+  border: 2px solid #267ae9;
+  color: #267ae9;
+}
+
+.about {
+  background-color: #fafafa;
 }
