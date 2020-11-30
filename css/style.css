@@ -317,4 +317,102 @@ body {
 
 .about {
   background-color: #fafafa;
+  text-align: center;
+  padding: 120px 0 100px;
+}
+.about__title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  color: #2f3f54;
+  font-size: 40px;
+  line-height: 50px;
+  margin-bottom: 170px;
+}
+.about__title .blue {
+  color: #267ae9;
+}
+
+.slider__item {
+  padding-bottom: 70px;
+}
+.slider__wrapper {
+  display: flex;
+  box-shadow: 0px 21px 49px 1px rgba(41, 44, 61, 0.15);
+  max-width: 524px;
+}
+.slider__image {
+  background-color: #267ae9;
+  width: 194px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slider__image img {
+  display: inline-block;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+.slider__right {
+  background-color: #fff;
+  width: 330px;
+  text-align: left;
+  padding: 65px 50px 60px 40px;
+}
+.slider__description {
+  color: #4a6385;
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 20px;
+}
+.slider__title {
+  color: #2f3f54;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 700;
+}
+.slider__title .blue {
+  color: #267ae9;
+}
+
+.slick-initialized .slick-slide {
+  display: flex;
+}
+
+.slider__items .slick-list {
+  margin: 0 -50px;
+}
+
+.slider__items .slick-track {
+  margin: 0 50px;
+}
+
+.slick-dots {
+  position: relative;
+  z-index: 6;
+  max-width: 1230px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.slick-dots li {
+  display: inline-block;
+  margin: 0 10px;
+}
+.slick-dots button {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 2px solid #267ae9;
+  background-color: #267ae9;
+  padding: 0;
+  font-size: 0;
+  cursor: pointer;
+  outline: none;
+}
+.slick-dots .slick-active button {
+  background-color: transparent;
+}
+
+.companies {
+  background-color: #fff;
 }
