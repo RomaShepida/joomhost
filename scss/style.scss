@@ -33,6 +33,12 @@ body {
     padding: 0 15px;
 }
 
+.title {
+    font-family: $roboto;
+    color: #d0e4ff;
+    font-size: 16px;
+}
+
 // ------- HEADER ------- //
 .header {
     background-color: #287be8;
@@ -571,4 +577,127 @@ body {
 // ------- COMPANIES ------- //
 .companies {
     background-color: #fff;
+    padding: 100px 0;
+
+    // .companies__items
+    &__items {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    // .companies__item
+    &__item {
+        height: 80px;
+    }
+
+    // .companies__img
+    &__img {}
+}
+
+// ------- FOOTER ------- //
+.footer {
+    background-color: #304054;
+    padding: 83px 0 128px;
+    color: #718db2;
+    font-size: 13px;
+
+    & a {
+        transition: all 0.5s;
+
+        &:hover {
+            color: #fff;
+        }
+    }
+
+    // .footer__wrapper
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    // .footer-about
+    &-about {
+        width: 280px;
+        border-bottom: solid 1px rgba(#d0e4ff, 0.1);
+
+        // .footer-about__logo
+        &__logo {
+            margin-bottom: 30px;
+        }
+
+        // .footer-about__text
+        &__text {
+            line-height: 22px;
+            padding-bottom: 35px;
+        }
+    }
+
+    // .footer-knowledge
+    &-knowledge {
+
+        // .footer-knowledge__title
+        &__title {
+            margin-bottom: 33px;
+        }
+
+        // .footer-knowledge__list
+        &__list {
+            line-height: 33px;
+        }
+    }
+
+    // .footer-company
+    &-company {
+
+        // .footer-company__title
+        &__title {
+            margin-bottom: 33px;
+        }
+
+        // .footer-company__list
+        &__list {
+            line-height: 33px;
+        }
+    }
+
+    // .footer-contact
+    &-contact {
+        width: 280px;
+
+        // .footer-contact__title
+        &__title {
+            margin-bottom: 33px;
+        }
+
+        &__input {
+            width: 280px;
+            border: solid 1px rgba(#3b4a5d, 1);
+            background-color: transparent;
+
+            font-size: 11px;
+            color: #d0e4ff;
+            font-weight: 700;
+
+            padding: 14px 11px;
+
+            &::placeholder {
+                font-weight: 400;
+                color: #6883a5;
+            }
+
+            &:focus {
+                background-color: rgba($color: #6883a5, $alpha: 0.2);
+            }
+
+        }
+
+        &__button {
+            color: #fff;
+            background-color: #2575e7;
+            border: none;
+            padding: 13px;
+            margin-top: 10px;
+        }
+    }
 }
