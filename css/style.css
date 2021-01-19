@@ -493,6 +493,25 @@ body {
 .footer-contact__input:focus {
   background-color: rgba(104, 131, 165, 0.2);
 }
+.footer-contact__textarea {
+  width: 280px;
+  height: 86px;
+  resize: none;
+  border: solid 1px #3b4a5d;
+  background-color: transparent;
+  font-size: 11px;
+  color: #d0e4ff;
+  font-weight: 700;
+  font-family: "Lato", sans-serif;
+  padding: 14px 11px;
+}
+.footer-contact__textarea::placeholder {
+  font-weight: 400;
+  color: #6883a5;
+}
+.footer-contact__textarea:focus {
+  background-color: rgba(104, 131, 165, 0.2);
+}
 .footer-contact__button {
   color: #fff;
   background-color: #2575e7;
