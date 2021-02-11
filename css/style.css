@@ -492,6 +492,8 @@ body {
 }
 .footer-contact__input:focus {
   background-color: rgba(104, 131, 165, 0.2);
+  border-color: #d0e4ff;
+  outline: none;
 }
 .footer-contact__textarea {
   width: 280px;
@@ -511,6 +513,8 @@ body {
 }
 .footer-contact__textarea:focus {
   background-color: rgba(104, 131, 165, 0.2);
+  border-color: #d0e4ff;
+  outline: none;
 }
 .footer-contact__button {
   color: #fff;

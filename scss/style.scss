@@ -685,8 +685,9 @@ body {
 
             &:focus {
                 background-color: rgba($color: #6883a5, $alpha: 0.2);
+                border-color: #d0e4ff;
+                outline: none;
             }
-
         }
 
         &__textarea {
@@ -710,8 +711,9 @@ body {
 
             &:focus {
                 background-color: rgba($color: #6883a5, $alpha: 0.2);
+                border-color: #d0e4ff;
+                outline: none;
             }
-
         }
 
         &__button {
