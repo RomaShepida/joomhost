@@ -719,9 +719,17 @@ body {
         &__button {
             color: #fff;
             background-color: #2575e7;
-            border: none;
+            border: 1px solid transparent;
             padding: 13px;
             margin-top: 10px;
+            transition: all 0.5s;
+
+            &:hover {
+                color: #2575e7;
+                background-color: #fff;
+                border: 1px solid #2575e7;
+                cursor: pointer;
+            }
         }
     }
 }
