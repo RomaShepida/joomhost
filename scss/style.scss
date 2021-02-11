@@ -60,6 +60,24 @@ body {
 
     // .header-nav
     &-nav {
+        position: relative;
+
+        // .header-nav__button
+        &__button {
+            width: 40px;
+            display: none;
+            cursor: pointer;
+            position: absolute;
+            top: -17px;
+            right: 20px;
+
+            & span {
+                display: block;
+                height: 4px;
+                background-color: #287be8;
+                margin-bottom: 10px;
+            }
+        }
 
         // .header-nav__list
         &__list {
@@ -719,7 +737,7 @@ body {
         &__button {
             color: #fff;
             background-color: #2575e7;
-            border: 1px solid transparent;
+            border: none;
             padding: 13px;
             margin-top: 10px;
             transition: all 0.5s;
@@ -727,8 +745,106 @@ body {
             &:hover {
                 color: #2575e7;
                 background-color: #fff;
-                border: 1px solid #2575e7;
                 cursor: pointer;
+            }
+        }
+    }
+}
+
+// ------- MEDIA-QUERIES ------- //
+@media screen and (max-width: 1260px) {
+    .header {
+        &-body {
+            padding-top: 60px;
+
+            &__wrapper {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        &-picture {
+            margin-top: 77px;
+        }
+
+        &-description {
+            text-align: center;
+
+            & ul {
+                text-align: left;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 970px) {
+    .header {
+        &-nav {
+            &__button {
+                display: block;
+            }
+
+            &__list {
+                display: none;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 705px) {
+    .header {
+        &-picture {
+            align-self: start;
+        }
+
+        &-body {
+            padding-bottom: 45px;
+        }
+    }
+}
+
+@media screen and (max-width: 603px) {
+    .header {
+        &-description {
+            &__list {
+                margin-bottom: 30px;
+            }
+
+            &__title h1 {
+                font-size: 38px;
+            }
+        }
+
+        &-picture {
+            &__text {
+                right: 0px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 495px) {
+    .header {
+        &-description {
+            &__title h1 {
+                font-size: 38px;
+            }
+        }
+
+        &-picture {
+            margin-top: 30px;
+
+            &__image {
+                margin-left: 0;
+
+                & img {
+                    width: 100%;
+                }
+            }
+
+            &__text {
+                right: 0px;
+                top: 40px;
             }
         }
     }
