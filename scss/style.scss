@@ -775,6 +775,23 @@ body {
             }
         }
     }
+
+    .description {
+        padding-top: 50px;
+        padding-bottom: 50px;
+
+        &-cards {
+            justify-content: space-around;
+        }
+
+        &-card {
+            margin: 30px;
+        }
+
+        &-text {
+            margin-bottom: 50px;
+        }
+    }
 }
 
 @media screen and (max-width: 970px) {
@@ -821,6 +838,16 @@ body {
             padding-bottom: 45px;
         }
     }
+
+    .description {
+        &-text {
+            margin-bottom: 20px;
+
+            &__title {
+                margin-bottom: 20px;
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 603px) {
@@ -865,6 +892,32 @@ body {
             &__text {
                 right: 0px;
                 top: 40px;
+            }
+        }
+    }
+
+    .description {
+        &-card {
+            margin: 10px;
+
+            &__price-wrapper {
+                margin-bottom: 0px;
+            }
+
+            &__picture {
+                margin-bottom: 10px;
+            }
+
+            &__title {
+                margin-bottom: 10px;
+            }
+
+            &__descr {
+                margin-bottom: 15px;
+            }
+
+            &__features {
+                margin-bottom: 10px;
             }
         }
     }
