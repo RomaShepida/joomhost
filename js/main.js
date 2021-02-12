@@ -7,6 +7,12 @@ $(function () {
         autoplay: true,
         autoplaySpeed: 4000,
         dots: true,
+        responsive: [
+            {
+                breakpoint: 1260,
+                settings: "unslick"
+            }
+        ]
     });
 
     $('.header-nav__button').on('click', function(){

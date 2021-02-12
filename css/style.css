@@ -578,6 +578,13 @@ body {
   .description-text {
     margin-bottom: 50px;
   }
+
+  .slider__items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
 }
 @media screen and (max-width: 970px) {
   .header-nav {
@@ -605,6 +612,18 @@ body {
     display: block;
     font-size: 26px;
   }
+
+  .about {
+    padding: 50px 0px;
+  }
+
+  .about__title {
+    margin-bottom: 50px;
+  }
+
+  .slider__item {
+    padding-bottom: 35px;
+  }
 }
 @media screen and (max-width: 705px) {
   .header-picture {
@@ -630,6 +649,21 @@ body {
   }
   .header-picture__text {
     right: 0px;
+  }
+
+  .slider__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .slider__image {
+    width: 100%;
+    padding: 10px 0px;
+  }
+
+  .about__title {
+    font-size: 28px;
+    line-height: 40px;
   }
 }
 @media screen and (max-width: 495px) {
@@ -668,9 +702,14 @@ body {
   .description-card__features {
     margin-bottom: 10px;
   }
+
+  .slider__right {
+    width: 280px;
+    padding: 10px 15px;
+  }
 }
 /* 
-making header-nav__list return display flex after changing resolution more then 970px, if menu button waas clicked before */
+making header-nav__list return display flex after changing resolution more then 970px, if menu button was clicked before */
 @media screen and (min-width: 970px) {
   .header-nav__list {
     display: flex !important;
